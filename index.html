@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/png" href="./images/main-logo1.png">
+  <title>Hodophile Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!--Nav Bar-->
+  <nav class="navbar navbar-expand-md bg-body-tertiary" id="navigation">
+    <div class="container-md"> 
+      <a class="navbar-brand main-text" href="."><img class="logo" src="images/logo.png">odophile</a>
+      <button class="navbar-toggler mb-4 bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"> </i><!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <div class="collapse navbar-collapse mb-1" id="navbarNav">
+        <ul class="navbar-nav px-2">
+          <li class="nav-item active ms-auto">
+            <a class="nav-link nav-link-text" href="#aboutUs">About Us</a>
+          </li>
+          <li class="nav-item active ms-auto">
+            <a class="nav-link nav-link-text" data-bs-toggle="modal" href= "#contact-us-modal">Contact Us</a>
+          </li>
+          <li class="nav-item active ms-auto">
+            
+            <a class="nav-link nav-link-text" data-bs-toggle="modal" href= "#how-to-use-modal">Navigation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Modal for contact us-->
+  <div class="modal fade" id="contact-us-modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><i class="fas fa-phone"></i><strong> Telephone:</strong> +44 0161 467 890</p>
+          <p><i class="fas fa-envelope"></i><strong> Email:</strong> group8@noIamNotOkay.com</p>
+          <p><i class="fas fa-thumbtack"></i><strong> Address:</strong></p> <p class="moving-right">123 group 8<br>Trilogy Skills Bootcamp<br>
+            Front End Development<br> United Kingdom</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Modal for contact us-->
+<div class="modal fade" id="how-to-use-modal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">How To Navigate Site</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-justify">Οur website provides the possibility to search accommodations for holiday destinations you want to visit 
+          or, if you can't decide where you want to go, then leave it to us 😉</p>
+        <p><strong>1. Search with the manual option.</strong> <br>This option will give you the ability to search the places you want to visit. 
+          Please see instructions below on how to use it:<br>
+          First, click the manual button.<div class="d-flex justify-content-center"><img class="img-fluid" alt="manual-first" src="./nav-images/manual-first.PNG"></div>
+        </p>
+        <p class="text-justify">Start typing your destination and allow our system pull out suggestions to aid your search.
+          Simply click on the desired destination, fill the rest of the form and click Submit. </p> <img class="img-fluid" src="./nav-images/manual-form.PNG">
+
+        <p class="text-justify">And now you wait! Leave it to us to pull the best recommendations suited to your needs, alongside addresses, ratings and estimated cost for duration of stay. <img class="img-fluid" src="./nav-images/rooms-recommends.png"></p>
+        <p>You can also preview the weather forecast at your destination while you wait, or view again by clicking <img class="img-fluid" style="display: inline; height: 40px;" src="./nav-images/weather-button.PNG">.</p>
+        <div class="d-flex justify-content-center"><img class="img-fluid" src="./nav-images/weather-forecast.PNG"></div>
+        <p>To book a place, click on your choice to get redirected to the specific accommodation on booking.com. And peradventure any accommodations look particularly sus🤭, click on the name of the lodge to 
+          automatically Google the hotel.</p><div class="d-flex justify-content-center"><img class="img-fluid" style="height: 80px;" src="./nav-images/search-more-on-hotel.PNG"></div>
+        <br>
+        <!-- <p>You can also</p> -->
+        <p><strong>2. Search with the automatic option.</strong> <br>Feeling a tad spontaneous? This option will randomly search out all-time favorite all around the world.
+        To get started, click "Automatic" button on our homepage.</p>
+        <div class="d-flex justify-content-center"><img class="img-fluid" alt="auto-first" src="./nav-images/auto-first.PNG"></div>
+        <p>Simply fill out the form and submit. <img class="img-fluid" alt="auto-form" src="./nav-images/auto-form.PNG"> </p>
+        <p>Our system will then recommend anywhere between 6 - 8 destinations world over. 
+          <div class="d-flex justify-content-center" style="margin-top: -20px;"><img class="img-fluid" src="./nav-images/auto-recommends.PNG"></div></p>
+        <p>Not liking any of the recommendations? You can refresh <img style="height: 40px;" src="./nav-images/refresh-cities.PNG"> the search and get new ones 👍.
+          Take your pick and leave it to us to recommend accommodations (curated with ❤️).</p>
+        <p>Your Indulgence, Our Satisfaction.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="jumbotron" id="image">
+
+  <!--Header name-->
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <h1 class="display-1">Hodophile</h1>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <p class="lead"><cite><strong>"find your next dream destination easily"</strong></cite>
+    </figcaption>
+  </figure>
+  <!--Manual/Automatic container-->
+  <div class="container-md text-center moving-down" id="manual-automatic">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-sm-4 auto">
+        <div class="p-4 card">
+          <div class="card-body">
+            <h5 class="card-title">Manual</h5>
+            <p class="card-text">Got a destination in mind? Click below to peruse accommodations for your holiday getaway!!</p>
+            <a href="#" class="btn btn-primary" id="manual">Manual</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-sm-4 auto">
+        <div class="p-4 card">
+          <div class="card-body">
+            <h5 class="card-title">Automatic</h5>
+            <p class="card-text">Feeling travel-spontaneous? Look no further! Click below to get the best recommendations and lodgings!</p>
+            <a href="#" class="btn btn-primary" id="automatic">Automatic</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- invisible? weather button -->
+  <div id="weatherButton" class="hide"></div>
+
+  <!-- When user clicks manual, display search options, same as above -->
+  <div class="container-md hide" id="services-manual">
+    <!-- display location and listings -->
+    <div class="row">
+    <!-- first search option -->
+    <div class="col-lg-12 col-md-12 border border-secondary rounded px-5" id="manual-search">
+      <!-- include button to close div -->
+      <br>
+      <div class="d-grid d-md-flex justify-content-md-end">
+        <button id="close" type="button" class="btn-close" aria-label="Close"></button>
+      </div>
+    
+      <div class="mb-2" role="document">
+
+        <div id="choice-of-top-form">
+          <div id="manual-top-form" class="hide">
+          <div>
+            <h3 class="x-spread text-center">The old-fashion search</h3>
+          </div>
+          <div>
+            <p class="x-spread text-center">(for veteran holidayers)</p>
+          </div>
+
+          <div class="md-form mb-2">
+            <i class="fas fa-map-marker-alt"></i>
+            <label for="enter-location" class="h6">Enter destination</label>
+            <input type="text" id="enter-location" class="form-control validate"
+              placeholder="start typing and select a suggestion" required>
+            <div id="recommendations" class="hide"></div>
+            </div>
+          </div>
+
+          <!-- automatic bit (for spontaneous holidayers)-->
+          <div id="auto-top-form" class="hide">
+            <div>
+              <h3 class="x-spread text-center">The spontaneous search</h3>
+            </div>
+            <div>
+              <p class="x-spread text-center">(for adventurous holidayers)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- state duration of stay -->
+        <form class="row mb-3 mt-3" id="stay-duration">
+          <div class="input-group h6 moving-up"><i class="fas fa-calendar"></i> Enter duration of stay </div>
+          <div class="col-md-6">
+            <label for="from-date" class="form-label"></label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">From</span>
+              <input type="date" class="form-control" id="from-date" aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="to-date" class="form-label"></label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend3">To</span>
+              <input type="date" class="form-control" id="to-date" aria-describedby="inputGroupPrepend3" required>
+            </div>
+          </div>
+        </form>
+        <!-- number of rooms -->
+        <form class="row mt-4">
+          <div class="col-6 mt-2">
+            <!-- put in expected number of adults -->
+            <div class="h6 input-group">
+              <div class="mt-2"><i class="fas fa-user"></i> Adults -</div>
+              <button id="decrease-adults" class="btn btn-outline-danger" style="border-top-left-radius: 7px;border-bottom-left-radius: 7px;" type="button">
+                <i class="fas fa-chevron-down"></i></button>
+              <input id="adults" type="text" class="form-control" value="1">
+              <button id="increase-adults" class="btn btn-outline-primary" type="button">
+                <i class="fas fa-chevron-up"></i></button>
+            </div>
+          </div>
+          <!-- put in expected number of rooms -->
+          <div class="col-6 mt-2">
+            <div class="h6 input-group">
+              <div class="mt-2"><i class="fas fa-bed"></i> Rooms -</div>
+              <button id="decrease-rooms" class="btn btn-outline-danger" style="border-top-left-radius: 7px;border-bottom-left-radius: 7px;" type="button">
+                <i class="fas fa-chevron-down"></i></button>
+              <input id="rooms" type="text" class="form-control" value="1">
+              <button id="increase-rooms" class="btn btn-outline-primary" type="button">
+                <i class="fas fa-chevron-up"></i></button>
+            </div>
+          </div>
+        </form>
+        <!--  -->
+        <!-- filter hotel search by what metric? -->
+        <form class="row mt-4 mb-3">
+          <div class="col-md-2 offset-md-4 input-group">
+            <div class="h6 mt-2"><i class="fas fa-filter"></i></i> Order Criterion -</div>
+            <select class="custom-select" id="order-options">
+              <option selected>Choose to order by...</option>
+              <option value="popularity">Popularity</option>
+              <option value="price">Price</option>
+              <option value="review_score">Review Score</option>
+            </select>
+          </div>
+        </form>
+        <!-- submit all -->
+        <div class="d-flex justify-content-center mb-3">
+          <button class="btn btn-deep-orange btn-primary" id="submit-search" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- display hotel search results as successive forms here -->
+  <div class="container-md hide border border-secondary rounded px-5" id="search-results-all">
+    <br>
+    <div class="row">
+      <div class="d-flex justify-content-end">
+        <button type="button" class="close-results" aria-label="Close">
+          <i class="fa fa-arrow-left" aria-hidden="true">Go back bruv👀!</i>
+        </button>
+      </div>
+      <h4 class="text-center" id="results-heading">❤️ Peruse through recommended accommodations below ❤️</h4>
+      <div class="col-lg-12 col-md-12" id="search-results"></div>
+    </div>
+  </div>
+
+  <!-- display cities -->
+  <div class="container-md hide border border-secondary rounded px-5" id="city-results-all">
+    <br>
+    <div class="row">
+      <div class="d-flex justify-content-end">
+        <button type="button" class="close-results" aria-label="Close">
+          <i class="fa fa-arrow-left" aria-hidden="true">Go back bruv👀!</i>
+        </button>
+      </div>
+      <h4 class="text-center" id="cities-heading">❤️ Pick one of the following destinations ❤️</h4>
+      <div class="col-lg-12 col-md-12 d-flex justify-content-center" id="search-cities-1"></div>
+      <div class="col-lg-12 col-md-12 d-flex justify-content-center" id="search-cities-2"></div>
+      <div class="d-flex justify-content-center">
+        <div>Fancy none? Click <button id="reload-cities" class="btn btn-outline-primary" type="button">
+          <i class="fas fa-sync-alt"></i></button> to refresh</div>
+      </div>
+    </div>
+  </div>
+  <!-- loader spinning... -->
+  <div id="spinner"><i class="fa fa-spinner fa-3x fa-spin"></i></div>
+
+  <!-- weather container -->
+  <div class="container-md hide border border-secondary rounded px-5" id="weather-results-all">
+    <br>
+    <div class="row">
+      <h4 class="text-center" id="weather-heading">❤️ Weather Forecast in Search Area ❤️</h4>
+      <div class="col-lg-12 col-md-12" id="weather-results"></div>
+    </div>
+  </div>
+
+  <div class="sticky"><a href="#navigation">Back To Top!</a></div>
+
+  
+</div>
+
+<!-- footer section start -->
+<footer id="footer">
+  <div class="container text-center">
+    <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="d-flex justify-content-md-start justify-content-sm-center">
+              <a href="."><img src="images/main-logo1.png" alt="our H icon" class="logo-footer-img"></a>
+            </div>
+          </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 ">
+                  <div class="footer-about " id="aboutUs">
+                    <div class="x-spread d-flex justify-content-center">
+                      <h3 id="aboutUs-head"> About Us</h3>
+                    </div>
+                        <p style="font-size:16px;">
+                            This is a user-friendly website that allows users to search known holiday destinations and access information on hotels in the area as well as weather conditions in the holiday destination.
+                            This is the height of life!!!
+                            Enjoy Every moment!!
+                            Feel the Joy!!
+                            ❤️❤️
+                        </p>
+                </div>
+              </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class=" container social-links ">
+          <div class="x-spread d-flex justify-content-center"><h3 id="followUs-head" class="ms-2">Follow Us </h3></div>
+              <ul class="social-icon ">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+              </ul>           
+          </div>
+        </div>
+
+
+      
+         
+      
+    </div>
+  </div>
+
+</footer>
+<!-- footer section end -->
+<!-- footer copy right section start -->
+<div id="copy-right">
+  <div class="copy-right-sec p-1 text-center"><i class="fas fa-copyright"></i>  
+    Hodophile 2023 Powered By <a href="#">edxBootcamp</a> 
+  </div>
+</div>
+<!-- footer copy right section end -->
+</div>
+
+
+</body>
+  <!-- followus icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- my js scripts -->
+  <script src="./js/script.js"></script>
+  <script src="./config.js"></script>
+  <script src="./js/cities.js"></script>
+
+</html>
